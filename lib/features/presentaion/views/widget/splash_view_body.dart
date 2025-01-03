@@ -8,9 +8,7 @@ class SplashviewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Image.asset(AssetsData.logo),
-      ],
+      children: [Image.asset(AssetsData.logo), Text('Read Free Books :)')],
     );
   }
 }
