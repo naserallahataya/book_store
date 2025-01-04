@@ -1,5 +1,5 @@
 import 'package:book_store/conestent.dart';
-import 'package:book_store/features/presentaion/views/splash__view.dart';
+import 'package:book_store/features/splash/presentaion/views/splash__view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

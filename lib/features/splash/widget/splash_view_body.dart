@@ -1,7 +1,7 @@
 import 'package:book_store/conestent.dart';
 import 'package:book_store/core/utils/assets_data.dart';
-import 'package:book_store/features/home/data/preserntation/views/view_models/home_view.dart';
-import 'package:book_store/features/presentaion/views/widget/sliding_text.dart';
+import 'package:book_store/features/home/preserntation/views/home_view.dart';
+import 'package:book_store/features/splash/widget/sliding_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
