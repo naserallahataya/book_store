@@ -1,4 +1,5 @@
 import 'package:book_store/core/utils/style.dart';
+import 'package:book_store/features/home/preserntation/views/widgets/book_action.dart';
 import 'package:book_store/features/home/preserntation/views/widgets/book_rating.dart';
 import 'package:book_store/features/home/preserntation/views/widgets/custom_details_app_bar.dart';
 import 'package:book_store/features/home/preserntation/views/widgets/custom_book_image.dart';
@@ -18,14 +19,14 @@ class BookViewDetailsBody extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: width * .2),
             child: const CustomBookImage(),
           ),
-        const  SizedBox(
+          const SizedBox(
             height: 40,
           ),
           Text(
             'Wrutten in the Stars',
             style: Styles.textStyle30,
           ),
-        const  SizedBox(
+          const SizedBox(
             height: 6,
           ),
           Opacity(
@@ -36,12 +37,16 @@ class BookViewDetailsBody extends StatelessWidget {
                   fontStyle: FontStyle.italic, fontWeight: FontWeight.w500),
             ),
           ),
-        const   SizedBox(
+          const SizedBox(
             height: 18,
           ),
           BookRating(
             mainAxisAlignment: MainAxisAlignment.center,
-          )
+          ),
+          const SizedBox(
+            height: 37,
+          ),
+          BookAction()
         ],
       ),
     );
