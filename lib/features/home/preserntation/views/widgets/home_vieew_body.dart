@@ -24,8 +24,10 @@ class HomeViewBody extends StatelessWidget {
             height: 20,
           ),
           BestSellerListViewItem(),
+ 
         ],
       ),
     );
   }
 }
+
