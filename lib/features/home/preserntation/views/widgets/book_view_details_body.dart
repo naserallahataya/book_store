@@ -1,3 +1,5 @@
+import 'package:book_store/core/utils/style.dart';
+import 'package:book_store/features/home/preserntation/views/widgets/book_rating.dart';
 import 'package:book_store/features/home/preserntation/views/widgets/custom_details_app_bar.dart';
 import 'package:book_store/features/home/preserntation/views/widgets/custom_book_image.dart';
 import 'package:flutter/material.dart';
@@ -13,9 +15,28 @@ class BookViewDetailsBody extends StatelessWidget {
         children: [
           CustomBookDetailsAppBar(),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: width * .17),
+            padding: EdgeInsets.symmetric(horizontal: width * .2),
             child: const CustomBookImage(),
-          )
+          ),
+          SizedBox(
+            height: 40,
+          ),
+          Text(
+            'Wrutten in the Stars',
+            style: Styles.textStyle30,
+          ),
+          SizedBox(
+            height: 6,
+          ),
+          Opacity(
+            opacity: .7,
+            child: Text(
+              'Rudyard Kipling',
+              style: Styles.textStyle18.copyWith(
+                  fontStyle: FontStyle.italic, fontWeight: FontWeight.w500),
+            ),
+          ),
+          BookRating()
         ],
       ),
     );
