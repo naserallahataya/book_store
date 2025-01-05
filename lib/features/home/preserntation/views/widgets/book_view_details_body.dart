@@ -3,6 +3,7 @@ import 'package:book_store/features/home/preserntation/views/widgets/book_action
 import 'package:book_store/features/home/preserntation/views/widgets/book_rating.dart';
 import 'package:book_store/features/home/preserntation/views/widgets/custom_details_app_bar.dart';
 import 'package:book_store/features/home/preserntation/views/widgets/custom_book_image.dart';
+import 'package:book_store/features/home/preserntation/views/widgets/similar_book_list_view.dart';
 import 'package:flutter/material.dart';
 
 class BookViewDetailsBody extends StatelessWidget {
@@ -12,7 +13,7 @@ class BookViewDetailsBody extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 25.0),
-      child: Column(
+      child: ListView(
         children: [
           CustomBookDetailsAppBar(),
           Padding(
@@ -46,7 +47,26 @@ class BookViewDetailsBody extends StatelessWidget {
           const SizedBox(
             height: 37,
           ),
-          BookAction()
+          BookAction(),
+          SizedBox(
+            height: 40,
+          ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'You can also see ',
+              style: Styles.textStyle14.copyWith(
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 16,
+          ),
+          SimilarBooksListView(),
+          SizedBox(
+            height: 16,
+          ),
         ],
       ),
     );
