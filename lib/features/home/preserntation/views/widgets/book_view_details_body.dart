@@ -18,14 +18,14 @@ class BookViewDetailsBody extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: width * .2),
             child: const CustomBookImage(),
           ),
-          SizedBox(
+        const  SizedBox(
             height: 40,
           ),
           Text(
             'Wrutten in the Stars',
             style: Styles.textStyle30,
           ),
-          SizedBox(
+        const  SizedBox(
             height: 6,
           ),
           Opacity(
@@ -36,7 +36,12 @@ class BookViewDetailsBody extends StatelessWidget {
                   fontStyle: FontStyle.italic, fontWeight: FontWeight.w500),
             ),
           ),
-          BookRating()
+        const   SizedBox(
+            height: 18,
+          ),
+          BookRating(
+            mainAxisAlignment: MainAxisAlignment.center,
+          )
         ],
       ),
     );
