@@ -1,6 +1,5 @@
 import 'package:book_store/core/utils/service_locator.dart';
 import 'package:book_store/features/home/data/model/book_model/book_model.dart';
-import 'package:book_store/features/home/data/repos/home_repo.dart';
 import 'package:book_store/features/home/data/repos/home_repo_impl.dart';
 import 'package:book_store/features/home/preserntation/manager/similar_books_cubit/similar_books_cubit.dart';
 import 'package:book_store/features/home/preserntation/views/bokk_details_view.dart';
