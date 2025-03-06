@@ -1,5 +1,4 @@
 import 'package:book_store/core/utils/style.dart';
-import 'package:book_store/features/home/preserntation/views/widgets/best_seller_list_view_item.dart';
 import 'package:book_store/features/search/views/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 

@@ -1,6 +1,5 @@
 import 'package:book_store/conestent.dart';
 import 'package:book_store/core/utils/app_router.dart';
-import 'package:book_store/core/utils/assets_data.dart';
 import 'package:book_store/core/utils/style.dart';
 import 'package:book_store/features/home/data/model/book_model/book_model.dart';
 import 'package:book_store/features/home/preserntation/views/widgets/book_rating.dart';
